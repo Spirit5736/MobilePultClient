@@ -51,6 +51,26 @@ namespace MobilePultClient
             imageView.Source = ImageSource.FromStream(() => new MemoryStream(data));
         }
 
+        // Команда для уменьшения звука
+        private void VolumeDown_Clicked(object sender, EventArgs e)
+        {
+            var client = Connection.Instance.client;
+            NetworkStream stream = client.GetStream();
+            String s = "LSVLM5";
+            byte[] message = Encoding.ASCII.GetBytes(s);
+            stream.Write(message, 0, message.Length);
+        }
+
+        // Команда для увеличения звука
+        private void VolumeUp_Clicked(object sender, EventArgs e)
+        {
+            var client = Connection.Instance.client;
+            NetworkStream stream = client.GetStream();
+            String s = "MRVLM4";
+            byte[] message = Encoding.ASCII.GetBytes(s);
+            stream.Write(message, 0, message.Length);
+        }
+
         // Сбор данных с сервера
         public byte[] getData(TcpClient client)
         {

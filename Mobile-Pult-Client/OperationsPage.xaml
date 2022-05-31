@@ -8,7 +8,11 @@
             <Button x:Name="Sleep" Text="Sleep" Clicked="Sleep_Clicked"/>
             <Button x:Name="Shutdown" Text="Shutdown" Clicked="Shutdown_Clicked"/>
             <Image x:Name="imageView"/>
-
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="VolumeDown" Text="VolumeDown" Clicked="VolumeDown_Clicked"/>
+                <Button x:Name="VolumeUp" Text="VolumeUp" Clicked="VolumeUp_Clicked"/>
+            </StackLayout>
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>
