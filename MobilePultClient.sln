@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilePultClient.Android", "Mobile-Pult-Client.Android\MobilePultClient.Android.csproj", "{2DC0FF3B-0B28-4BA0-9484-446DD0F52632}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobilePultClient", "Mobile-Pult-Client\MobilePultClient.csproj", "{B99E5361-334C-4778-B38E-749974A3FB0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DC0FF3B-0B28-4BA0-9484-446DD0F52632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DC0FF3B-0B28-4BA0-9484-446DD0F52632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DC0FF3B-0B28-4BA0-9484-446DD0F52632}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2DC0FF3B-0B28-4BA0-9484-446DD0F52632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DC0FF3B-0B28-4BA0-9484-446DD0F52632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DC0FF3B-0B28-4BA0-9484-446DD0F52632}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B99E5361-334C-4778-B38E-749974A3FB0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99E5361-334C-4778-B38E-749974A3FB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99E5361-334C-4778-B38E-749974A3FB0D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B99E5361-334C-4778-B38E-749974A3FB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99E5361-334C-4778-B38E-749974A3FB0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B99E5361-334C-4778-B38E-749974A3FB0D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {274E0DB7-E75F-4D0A-AE53-E75D7401E50A}
+	EndGlobalSection
+EndGlobal
