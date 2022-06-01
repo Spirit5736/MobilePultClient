@@ -71,6 +71,16 @@ namespace MobilePultClient
             stream.Write(message, 0, message.Length);
         }
 
+        // Команда для отключения звука
+        private void Mute_Clicked(object sender, EventArgs e)
+        {
+            var client = Connection.Instance.client;
+            NetworkStream stream = client.GetStream();
+            String s = "MT6";
+            byte[] message = Encoding.ASCII.GetBytes(s);
+            stream.Write(message, 0, message.Length);
+        }
+
         // Сбор данных с сервера
         public byte[] getData(TcpClient client)
         {
