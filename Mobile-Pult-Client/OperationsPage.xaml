@@ -8,8 +8,9 @@
             <Button x:Name="Sleep" Text="Sleep" Clicked="Sleep_Clicked"/>
             <Button x:Name="Shutdown" Text="Shutdown" Clicked="Shutdown_Clicked"/>
             <Image x:Name="imageView"/>
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" HorizontalOptions ="Center">
                 <Button x:Name="VolumeDown" Text="VolumeDown" Clicked="VolumeDown_Clicked"/>
+                <ImageButton x:Name="Mute" Clicked="Mute_Clicked" Source="Mute_logo20x20.png"/>
                 <Button x:Name="VolumeUp" Text="VolumeUp" Clicked="VolumeUp_Clicked"/>
             </StackLayout>
         </StackLayout>

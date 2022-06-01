@@ -84,7 +84,7 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\drawable\" />
+    <AndroidResource Include="Resources\drawable\Mute_logo20x20.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mobile-Pult-Client\MobilePultClient.csproj">
