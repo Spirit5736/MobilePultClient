@@ -54,31 +54,56 @@ namespace MobilePultClient
         // Команда для уменьшения звука
         private void VolumeDown_Clicked(object sender, EventArgs e)
         {
-            var client = Connection.Instance.client;
-            NetworkStream stream = client.GetStream();
-            String s = "LSVLM5";
-            byte[] message = Encoding.ASCII.GetBytes(s);
-            stream.Write(message, 0, message.Length);
+            try
+            {
+                var client = Connection.Instance.client;
+                NetworkStream stream = client.GetStream();
+                String s = "LSVLM5";
+                byte[] message = Encoding.ASCII.GetBytes(s);
+                stream.Write(message, 0, message.Length);
+            }
+
+            catch (NullReferenceException ex)
+            {
+                DisplayAlert("error", $"{ex.Message}", "Ok");
+            }
         }
 
         // Команда для увеличения звука
         private void VolumeUp_Clicked(object sender, EventArgs e)
         {
-            var client = Connection.Instance.client;
-            NetworkStream stream = client.GetStream();
-            String s = "MRVLM4";
-            byte[] message = Encoding.ASCII.GetBytes(s);
-            stream.Write(message, 0, message.Length);
+            try
+            {
+                var client = Connection.Instance.client;
+                NetworkStream stream = client.GetStream();
+                String s = "MRVLM4";
+                byte[] message = Encoding.ASCII.GetBytes(s);
+                stream.Write(message, 0, message.Length);
+            }
+
+            catch (NullReferenceException ex)
+            {
+                DisplayAlert( "error", $"{ex.Message}", "Ok");
+            }
         }
 
         // Команда для отключения звука
         private void Mute_Clicked(object sender, EventArgs e)
         {
-            var client = Connection.Instance.client;
+            try
+            {
+                var client = Connection.Instance.client;
             NetworkStream stream = client.GetStream();
             String s = "MT6";
             byte[] message = Encoding.ASCII.GetBytes(s);
             stream.Write(message, 0, message.Length);
+            }
+
+            catch (NullReferenceException ex)
+            {
+                DisplayAlert("error", $"{ex.Message}", "Ok");
+            }
+
         }
 
         // Сбор данных с сервера
