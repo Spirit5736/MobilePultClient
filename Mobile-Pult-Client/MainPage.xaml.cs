@@ -22,7 +22,8 @@ namespace Mobile_Pult_Client
             try
             {
                 TcpClient client = new TcpClient();
-                await client.ConnectAsync(IPAddress.Text, Convert.ToInt32(Port.Text));
+                //await client.ConnectAsync(IPAddress.Text, Convert.ToInt32(Port.Text));
+                await client.ConnectAsync("192.168.0.15", Convert.ToInt32("1234"));
                 if (client.Connected)
                 {
                     Connection.Instance.client = client;
