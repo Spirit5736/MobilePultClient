@@ -106,6 +106,24 @@ namespace MobilePultClient
 
         }
 
+        private void Play_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                var client = Connection.Instance.client;
+                NetworkStream stream = client.GetStream();
+                String s = "PLAY8";
+                byte[] message = Encoding.ASCII.GetBytes(s);
+                stream.Write(message, 0, message.Length);
+            }
+
+            catch (NullReferenceException ex)
+            {
+                DisplayAlert("error", $"{ex.Message}", "Ok");
+            }
+
+        }
+
         // Сбор данных с сервера
         public byte[] getData(TcpClient client)
         {

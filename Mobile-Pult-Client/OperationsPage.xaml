@@ -13,6 +13,9 @@
                 <ImageButton x:Name="Mute" Clicked="Mute_Clicked" Source="Mute_logo20x20.png"/>
                 <Button x:Name="VolumeUp" Text="VolumeUp" Clicked="VolumeUp_Clicked"/>
             </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions ="Center">
+                <Button x:Name="Play" Text="Play/Pause" Clicked="Play_Clicked"/>
+            </StackLayout>
         </StackLayout>
 
     </ContentPage.Content>
